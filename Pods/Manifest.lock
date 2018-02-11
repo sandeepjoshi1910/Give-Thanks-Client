@@ -1,17 +1,17 @@
 PODS:
+  - ChartProgressBar (1.0.4)
   - Charts (3.0.5):
     - Charts/Core (= 3.0.5)
   - Charts/Core (3.0.5)
-  - RSKPlaceholderTextView (3.0.0)
 
 DEPENDENCIES:
+  - ChartProgressBar
   - Charts
-  - RSKPlaceholderTextView
 
 SPEC CHECKSUMS:
+  ChartProgressBar: 1fe24fc286de1a3a8d02dcbdf6bc779c8e85865b
   Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
-  RSKPlaceholderTextView: 0ce73a19998e236323b3f1f16bf4a4e4a76c2c28
 
-PODFILE CHECKSUM: b39babb72c8ea611c1133663c809379528f3e67a
+PODFILE CHECKSUM: 5b8d430ef38120257700f1452a6a78ef015e6e22
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

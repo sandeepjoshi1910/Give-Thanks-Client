@@ -7,13 +7,11 @@
 //
 
 import UIKit
-import RSKPlaceholderTextView
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var usernameTextView: UITextField!
-    
     @IBOutlet weak var passwordTextView: UITextField!
     @IBOutlet weak var backgroundImage: UIImageView!
     let lineColor = UIColor(red:0.12, green:0.23, blue:0.35, alpha:1.0)
@@ -26,6 +24,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     
+    @IBAction func loginButtonTouched(_ sender: Any) {
+        print("Go")
+        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "dvc") as! DashboardVC
+        self.present(dvc, animated: true, completion: nil)
+    }
     func getLineView(view: UIView) -> UIView {
         let borderLine = UIView()
         let height = 1.0
@@ -39,7 +42,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return true

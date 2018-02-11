@@ -62,15 +62,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vR-Tb-NNU">
-                                <rect key="frame" x="130" y="446" width="115" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jH-il-M4s">
+                                <rect key="frame" x="168" y="392" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="5VW-ip-kOd" kind="show" id="VQm-1J-Luu"/>
+                                    <action selector="loginButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjj-Cq-4JF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="AUc-LQ-CTe" id="2PB-FT-jb6"/>
+                        <outlet property="loginButton" destination="1jH-il-M4s" id="gMd-Di-vNU"/>
                         <outlet property="passwordTextView" destination="tJ7-TM-iQM" id="ieN-GD-Qcz"/>
                         <outlet property="usernameTextView" destination="MLw-zQ-p9F" id="eoG-85-t30"/>
                     </connections>
@@ -90,7 +88,7 @@
         <!--DashboardVC-->
         <scene sceneID="jJm-kZ-VrY">
             <objects>
-                <viewController id="5VW-ip-kOd" customClass="DashboardVC" customModule="Give_Thanks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dvc" id="5VW-ip-kOd" customClass="DashboardVC" customModule="Give_Thanks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1iO-qy-MfH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,8 +108,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Donations:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-zb-8b9">
-                                <rect key="frame" x="120" y="48" width="83" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-zb-8b9">
+                                <rect key="frame" x="120" y="48" width="83" height="20"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,11 +133,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3v-Eh-9Jt">
-                                <rect key="frame" x="18" y="128" width="341" height="1"/>
+                                <rect key="frame" x="16" y="215" width="341" height="1"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9X-0R-wKD">
-                                <rect key="frame" x="25" y="141" width="66" height="21"/>
+                                <rect key="frame" x="23" y="228" width="66" height="21"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,6 +148,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H9B-kU-9Ja">
+                                <rect key="frame" x="16" y="333" width="341" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tyv-cy-Pu2" customClass="ChartProgressBar" customModule="ChartProgressBar">
+                                <rect key="frame" x="16" y="342" width="341" height="305"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -177,6 +185,7 @@
                         <viewLayoutGuide key="safeArea" id="Xgb-tT-2jW"/>
                     </view>
                     <connections>
+                        <outlet property="chart" destination="Tyv-cy-Pu2" id="bOk-V3-yNU"/>
                         <outlet property="donations" destination="Rx7-Cl-EPD" id="a2J-tD-DUP"/>
                         <outlet property="memberSince" destination="tPj-RW-PE2" id="CcQ-xt-cVR"/>
                         <outlet property="name" destination="vMu-YG-Uak" id="BVE-4G-slL"/>
