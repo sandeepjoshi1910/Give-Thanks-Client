@@ -9,34 +9,21 @@
 import UIKit
 import RSKPlaceholderTextView
 
-class ViewController: UIViewController, UITextViewDelegate {
+class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var username: UITextView!
-    @IBOutlet weak var password: UITextView!
     @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var usernameTextView: UITextField!
     
+    @IBOutlet weak var passwordTextView: UITextField!
     @IBOutlet weak var backgroundImage: UIImageView!
     let lineColor = UIColor(red:0.12, green:0.23, blue:0.35, alpha:1.0)
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundImage.image = blurImage(image: UIImage(named: "giveThanks")!)
         // Do any additional setup after loading the view, typically from a nib.
         
 //        self.username.setBottomLine(borderColor: lineColor)
 //        self.password.setBottomLine(borderColor: lineColor)
-        
-        
-        (username as! RSKPlaceholderTextView).placeholder = "example@domain.com"
-        (password as! RSKPlaceholderTextView).placeholder = "Keep it Strong"
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        self.view.addGestureRecognizer(tap)
-        
-        
-    }
-    
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        username.endEditing(true)
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     
     func getLineView(view: UIView) -> UIView {
@@ -51,6 +38,11 @@ class ViewController: UIViewController, UITextViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     func blurImage(image:UIImage) -> UIImage? {
@@ -75,32 +67,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         {
             return UIImage(cgImage: cgImageA, scale: originalScale, orientation: originalOrientation)
         }
-        
         return nil
     }
-
-
-    
-
 }
-
-
-extension UITextField {
-    
-    func setBottomLine(borderColor: UIColor) {
-        
-        self.borderStyle = UITextBorderStyle.none
-        self.backgroundColor = UIColor.clear
-        
-        let borderLine = UIView()
-        let height = 1.0
-        borderLine.frame = CGRect(x: 0, y: Double(self.frame.height) - height, width: Double(self.frame.width), height: height)
-        
-        borderLine.backgroundColor = borderColor
-        self.addSubview(borderLine)
-    }
-    
-    
-    
-}
-
