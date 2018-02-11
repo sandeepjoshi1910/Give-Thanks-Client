@@ -94,13 +94,99 @@
                     <view key="view" contentMode="scaleToFill" id="1iO-qy-MfH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aeu-DD-2qQ">
+                                <rect key="frame" x="26" y="26" width="66" height="66"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzf-V0-UCy">
+                                <rect key="frame" x="25" y="95" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AS-Wc-azY">
+                                <rect key="frame" x="120" y="26" width="53" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Donations:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-zb-8b9">
+                                <rect key="frame" x="120" y="48" width="83" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rx7-Cl-EPD">
+                                <rect key="frame" x="196" y="48" width="163" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMu-YG-Uak">
+                                <rect key="frame" x="170" y="26" width="189" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Member since:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRn-M1-58i">
+                                <rect key="frame" x="120" y="71" width="113" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i3v-Eh-9Jt">
+                                <rect key="frame" x="18" y="128" width="341" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9X-0R-wKD">
+                                <rect key="frame" x="25" y="141" width="66" height="21"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPj-RW-PE2">
+                                <rect key="frame" x="225" y="72" width="134" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tPj-RW-PE2" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="52" id="4Ch-DU-nNH"/>
+                            <constraint firstItem="aeu-DD-2qQ" firstAttribute="leading" secondItem="Xgb-tT-2jW" secondAttribute="leading" constant="26" id="53n-Hv-pGk"/>
+                            <constraint firstItem="Pzf-V0-UCy" firstAttribute="leading" secondItem="Xgb-tT-2jW" secondAttribute="leading" constant="25" id="AEr-YU-CoI"/>
+                            <constraint firstItem="4AS-Wc-azY" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="6" id="AP0-VE-3GR"/>
+                            <constraint firstItem="ZRn-M1-58i" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="51" id="Bci-s1-dsz"/>
+                            <constraint firstItem="vMu-YG-Uak" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="6" id="Bl3-Jr-58s"/>
+                            <constraint firstItem="m9X-0R-wKD" firstAttribute="top" secondItem="i3v-Eh-9Jt" secondAttribute="bottom" constant="12" id="Bne-yt-wfU"/>
+                            <constraint firstItem="Pzf-V0-UCy" firstAttribute="top" secondItem="aeu-DD-2qQ" secondAttribute="bottom" constant="3" id="F6m-vo-sar"/>
+                            <constraint firstItem="Rx7-Cl-EPD" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="28" id="Jph-W7-IkF"/>
+                            <constraint firstItem="vMu-YG-Uak" firstAttribute="leading" secondItem="4AS-Wc-azY" secondAttribute="trailing" constant="-3" id="MWr-UL-WKQ"/>
+                            <constraint firstItem="Rx7-Cl-EPD" firstAttribute="leading" secondItem="iTU-zb-8b9" secondAttribute="trailing" constant="-7" id="X5I-kj-ALL"/>
+                            <constraint firstItem="iTU-zb-8b9" firstAttribute="leading" secondItem="aeu-DD-2qQ" secondAttribute="trailing" constant="28" id="bOT-zG-TTr"/>
+                            <constraint firstItem="ZRn-M1-58i" firstAttribute="leading" secondItem="aeu-DD-2qQ" secondAttribute="trailing" constant="28" id="dFr-9W-H0m"/>
+                            <constraint firstItem="Xgb-tT-2jW" firstAttribute="trailing" secondItem="i3v-Eh-9Jt" secondAttribute="trailing" constant="16" id="eQU-Gh-BYS"/>
+                            <constraint firstItem="tPj-RW-PE2" firstAttribute="leading" secondItem="ZRn-M1-58i" secondAttribute="trailing" constant="-8" id="fSu-N0-Iyp"/>
+                            <constraint firstItem="iTU-zb-8b9" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="28" id="jFT-Jy-UCS"/>
+                            <constraint firstItem="aeu-DD-2qQ" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="6" id="lut-ab-9VX"/>
+                            <constraint firstItem="m9X-0R-wKD" firstAttribute="leading" secondItem="Xgb-tT-2jW" secondAttribute="leading" constant="25" id="q56-6o-jaG"/>
+                            <constraint firstItem="i3v-Eh-9Jt" firstAttribute="top" secondItem="Xgb-tT-2jW" secondAttribute="top" constant="108" id="tmZ-st-WTm"/>
+                            <constraint firstItem="4AS-Wc-azY" firstAttribute="leading" secondItem="aeu-DD-2qQ" secondAttribute="trailing" constant="28" id="uBG-r5-b3x"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xgb-tT-2jW"/>
                     </view>
+                    <connections>
+                        <outlet property="donations" destination="Rx7-Cl-EPD" id="a2J-tD-DUP"/>
+                        <outlet property="memberSince" destination="tPj-RW-PE2" id="CcQ-xt-cVR"/>
+                        <outlet property="name" destination="vMu-YG-Uak" id="BVE-4G-slL"/>
+                        <outlet property="profileImageView" destination="aeu-DD-2qQ" id="6fF-uh-LCN"/>
+                        <outlet property="user" destination="Pzf-V0-UCy" id="w0Q-Bn-VHs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3H-ph-cfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.25" y="132.04225352112675"/>
+            <point key="canvasLocation" x="580" y="131.78410794602701"/>
         </scene>
     </scenes>
 </document>
