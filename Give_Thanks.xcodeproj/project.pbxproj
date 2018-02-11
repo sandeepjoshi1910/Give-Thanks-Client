@@ -17,6 +17,9 @@
 		3030404C202FB309005769A4 /* Give_ThanksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3030404B202FB309005769A4 /* Give_ThanksTests.swift */; };
 		30304057202FB309005769A4 /* Give_ThanksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30304056202FB309005769A4 /* Give_ThanksUITests.swift */; };
 		30319FFB202FCA7D0064C275 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30319FFA202FCA7D0064C275 /* DashboardVC.swift */; };
+		3031A007203021D90064C275 /* LeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031A006203021D90064C275 /* LeaderBoardVC.swift */; };
+		3031A009203022B20064C275 /* LeaderBoardTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3031A008203022B20064C275 /* LeaderBoardTableCell.xib */; };
+		3031A00B2030233D0064C275 /* LeaderBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3031A00A2030233D0064C275 /* LeaderBoardCell.swift */; };
 		516E23E17567B5843EC2C52E /* Pods_Give_Thanks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7E36578A8714E2CD11867 /* Pods_Give_Thanks.framework */; };
 		9F759A3C4AD37C4EEB186C78 /* Pods_Give_ThanksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B7EB093153DF930BE32788 /* Pods_Give_ThanksUITests.framework */; };
 		F76302702030049E001009A7 /* CharityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763026F2030049E001009A7 /* CharityVC.swift */; };
@@ -56,6 +59,9 @@
 		30304056202FB309005769A4 /* Give_ThanksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Give_ThanksUITests.swift; sourceTree = "<group>"; };
 		30304058202FB309005769A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30319FFA202FCA7D0064C275 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		3031A006203021D90064C275 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
+		3031A008203022B20064C275 /* LeaderBoardTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardTableCell.xib; sourceTree = "<group>"; };
+		3031A00A2030233D0064C275 /* LeaderBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCell.swift; sourceTree = "<group>"; };
 		42D7E36578A8714E2CD11867 /* Pods_Give_Thanks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Give_Thanks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73A3048CFAEDC68E960801BB /* Pods-Give_ThanksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Give_ThanksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Give_ThanksUITests/Pods-Give_ThanksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		95B7EB093153DF930BE32788 /* Pods_Give_ThanksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Give_ThanksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,7 +153,10 @@
 				30304035202FB308005769A4 /* ViewController.swift */,
 				30319FFA202FCA7D0064C275 /* DashboardVC.swift */,
 				F763026F2030049E001009A7 /* CharityVC.swift */,
+				3031A006203021D90064C275 /* LeaderBoardVC.swift */,
 				30304037202FB308005769A4 /* Main.storyboard */,
+				3031A008203022B20064C275 /* LeaderBoardTableCell.xib */,
+				3031A00A2030233D0064C275 /* LeaderBoardCell.swift */,
 				3030403D202FB308005769A4 /* Assets.xcassets */,
 				3030403F202FB308005769A4 /* LaunchScreen.storyboard */,
 				30304042202FB309005769A4 /* Info.plist */,
@@ -292,6 +301,7 @@
 			files = (
 				30304041202FB308005769A4 /* LaunchScreen.storyboard in Resources */,
 				3030403E202FB308005769A4 /* Assets.xcassets in Resources */,
+				3031A009203022B20064C275 /* LeaderBoardTableCell.xib in Resources */,
 				30304039202FB308005769A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +480,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30304036202FB308005769A4 /* ViewController.swift in Sources */,
+				3031A007203021D90064C275 /* LeaderBoardVC.swift in Sources */,
+				3031A00B2030233D0064C275 /* LeaderBoardCell.swift in Sources */,
 				F76302702030049E001009A7 /* CharityVC.swift in Sources */,
 				30319FFB202FCA7D0064C275 /* DashboardVC.swift in Sources */,
 				30304034202FB308005769A4 /* AppDelegate.swift in Sources */,
@@ -641,10 +653,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M678K3T63A;
+				DEVELOPMENT_TEAM = 65W3HGQ33P;
 				INFOPLIST_FILE = Give_Thanks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.octabit.givethanks;
+				PRODUCT_BUNDLE_IDENTIFIER = sandeep.firstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,10 +669,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M678K3T63A;
+				DEVELOPMENT_TEAM = 65W3HGQ33P;
 				INFOPLIST_FILE = Give_Thanks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.octabit.givethanks;
+				PRODUCT_BUNDLE_IDENTIFIER = sandeep.firstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
