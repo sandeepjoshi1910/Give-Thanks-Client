@@ -4,7 +4,7 @@
 target 'Give_Thanks' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Charts'
+  pod 'PieCharts'
   pod 'ChartProgressBar'
   # Pods for Give_Thanks
 
