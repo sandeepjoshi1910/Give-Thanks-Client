@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Charts
 import ChartProgressBar
 
 class DashboardVC: ViewController {
@@ -17,6 +16,7 @@ class DashboardVC: ViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var chart: ChartProgressBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;

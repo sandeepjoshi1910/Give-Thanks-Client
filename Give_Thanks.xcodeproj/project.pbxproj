@@ -19,6 +19,7 @@
 		30319FFB202FCA7D0064C275 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30319FFA202FCA7D0064C275 /* DashboardVC.swift */; };
 		516E23E17567B5843EC2C52E /* Pods_Give_Thanks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D7E36578A8714E2CD11867 /* Pods_Give_Thanks.framework */; };
 		9F759A3C4AD37C4EEB186C78 /* Pods_Give_ThanksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B7EB093153DF930BE32788 /* Pods_Give_ThanksUITests.framework */; };
+		F76302702030049E001009A7 /* CharityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F763026F2030049E001009A7 /* CharityVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		BE6AA04FA383F0BFD37F8A7D /* Pods_Give_ThanksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Give_ThanksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE8A42CB3076638AC06CC28 /* Pods-Give_ThanksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Give_ThanksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Give_ThanksTests/Pods-Give_ThanksTests.release.xcconfig"; sourceTree = "<group>"; };
 		E9F1F171742B0A23F10DCFAD /* Pods-Give_ThanksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Give_ThanksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Give_ThanksTests/Pods-Give_ThanksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F763026F2030049E001009A7 /* CharityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				30304033202FB308005769A4 /* AppDelegate.swift */,
 				30304035202FB308005769A4 /* ViewController.swift */,
 				30319FFA202FCA7D0064C275 /* DashboardVC.swift */,
+				F763026F2030049E001009A7 /* CharityVC.swift */,
 				30304037202FB308005769A4 /* Main.storyboard */,
 				3030403D202FB308005769A4 /* Assets.xcassets */,
 				3030403F202FB308005769A4 /* LaunchScreen.storyboard */,
@@ -402,12 +405,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Give_Thanks/Pods-Give_Thanks-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChartProgressBar/ChartProgressBar.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/PieCharts/PieCharts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChartProgressBar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PieCharts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30304036202FB308005769A4 /* ViewController.swift in Sources */,
+				F76302702030049E001009A7 /* CharityVC.swift in Sources */,
 				30319FFB202FCA7D0064C275 /* DashboardVC.swift in Sources */,
 				30304034202FB308005769A4 /* AppDelegate.swift in Sources */,
 				3030403C202FB308005769A4 /* Give_Thanks.xcdatamodeld in Sources */,

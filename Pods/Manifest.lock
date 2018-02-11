@@ -1,17 +1,15 @@
 PODS:
   - ChartProgressBar (1.0.4)
-  - Charts (3.0.5):
-    - Charts/Core (= 3.0.5)
-  - Charts/Core (3.0.5)
+  - PieCharts (0.0.5)
 
 DEPENDENCIES:
   - ChartProgressBar
-  - Charts
+  - PieCharts
 
 SPEC CHECKSUMS:
   ChartProgressBar: 1fe24fc286de1a3a8d02dcbdf6bc779c8e85865b
-  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  PieCharts: a0fb4784a3460088c8ba7dfb00b89784ddaa7e70
 
-PODFILE CHECKSUM: 5b8d430ef38120257700f1452a6a78ef015e6e22
+PODFILE CHECKSUM: 2a8a24c95b343d8b596b08ff4be2a94efe3b0a20
 
 COCOAPODS: 1.4.0

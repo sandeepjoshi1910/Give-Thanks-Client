@@ -26,8 +26,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loginButtonTouched(_ sender: Any) {
         print("Go")
-        let dvc = self.storyboard?.instantiateViewController(withIdentifier: "dvc") as! DashboardVC
-        self.present(dvc, animated: true, completion: nil)
+        // let dvc = self.storyboard?.instantiateViewController(withIdentifier: "dvc") as! DashboardVC
+        // self.present(dvc, animated: true, completion: nil)
+        let cvc = self.storyboard?.instantiateViewController(withIdentifier: "cvc") as! CharityVC
+        self.present(cvc, animated: true, completion: nil)
     }
     func getLineView(view: UIView) -> UIView {
         let borderLine = UIView()
